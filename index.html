@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <h2>Emanuel_Code</h2>
-        <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Proyectos</a></li>
-          <li><a href="">Tecnologias</a></li>
-          <li><a href="">Contacto</a></li>
-        </ul>
-      </nav>
-      <div>
-        <img src="img/foto-de-perfil.jpeg" alt="foto de Emanuel_Code" />
-        <div>
-            <h1>Desarrollador Web</h1>
-            <div><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus mollitia ullam repudiandae, sequi nisi atque cupiditate quasi, consequatur porro esse ipsa voluptates? Quos aliquam nisi officiis officia maxime voluptates error.</p></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navegador">
+      <h2 class="nombre">Emanuel-Code</h2>
+      <ul class="navegador__menu">
+        <li><a href="" class="navegador__botones">Inicio</a></li>
+        <li><a href="" class="navegador__botones">Proyectos</a></li>
+        <li><a href="" class="navegador__botones">Tecnologias</a></li>
+        <li><a href="" class="navegador__botones">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="precentacion">
+      <div class="precentacion__bloque">
+        <img src="img/foto-de-perfil.jpeg" alt="foto de Emanuel_Code" class="precentacion__img" />
+        <div class="precentacion__descripcionCompleta">
+          <h1 class="precentacion__titulo">Desarrollador Web</h1>
+          <div class="precentacion__parrafo">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus mollitia ullam repudiandae, sequi
+              nisi atque cupiditate quasi, consequatur porro esse ipsa voluptates? Quos aliquam nisi officiis officia
+              maxime voluptates error.</p>
+          </div>
         </div>
       </div>
-    </header>
-    <main>
-        <section>
-            <h2>Proyectos</h2>
-            <div>
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-            </div>
-        </section>
-        <section>
-            <h2>Tecnologias</h2>
-            <div>
-                <div><img src="img/html.png" alt=""></div>
-                <div><img src="img/css.png" alt=""></div>
-                <div><img src="img/javascript.jpeg" alt=""></div>
-            </div>
-        </section>
-    </main>
-    <footer>
-      <form action="">
-        <div>
-          <input type="text" name="nombre" />
-          <input type="email" name="correo" required />
-        </div>
-        <div><textarea name="texto" id="" cols="30" rows="10"></textarea></div>
-        <input type="submit" />
-      </form>
-    </footer>
-  </body>
+
+    </div>
+  </header>
+  <main>
+    <section class="proyectos">
+      <h2 class="Proyectos__titulo">Proyectos</h2>
+      <div class="proyectos__bloque">
+        <div class="proyectos__cajas">1</div>
+        <div class="proyectos__cajas">2</div>
+        <div class="proyectos__cajas">3</div>
+        <div class="proyectos__cajas">4</div>
+        <div class="proyectos__cajas">5</div>
+        <div class="proyectos__cajas">6</div>
+        <div class="proyectos__cajas">7</div>
+        <div class="proyectos__cajas">8</div>
+      </div>
+    </section>
+    <section class="tecnologias">
+      <h2 class="tecnologias__titulo">Tecnologias</h2>
+      <div class="tecnologias__bloque">
+        <div class="tecnologias_cajas"><img src="img/html.png" alt="" class="tecnologias__img"></div>
+        <div class="tecnologias_cajas"><img src="img/css.png" alt="" class="tecnologias__img"></div>
+        <div class="tecnologias_cajas"><img src="img/javascript.png" alt="" class="tecnologias__img--active"></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <form action="" class="formulario">
+      <div class="formulario__bloque">
+        <input type="text" name="nombre" class="formulario__input" />
+        <input type="email" name="correo" class="formulario__input" />
+      </div>
+      <div><textarea name="texto" id="" cols="30" rows="10" class="formulario_textarea"></textarea></div>
+      <input type="submit" class="formulario__submit" />
+    </form>
+  </footer>
+</body>
+
 </html>
