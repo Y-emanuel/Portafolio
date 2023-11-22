@@ -11,7 +11,10 @@
 <body>
   <header>
     <nav class="navegador">
-      <h2 class="nombre">Emanuel-Code</h2>
+      <div class="nombre__bloque">
+        <h2 class="nombre">Emanuel-Code</h2>
+      </div>
+      
       <ul class="navegador__menu">
         <li><a href="" class="navegador__botones">Inicio</a></li>
         <li><a href="" class="navegador__botones">Proyectos</a></li>
@@ -21,22 +24,24 @@
     </nav>
     <div class="precentacion">
       <div class="precentacion__bloque">
-        <img src="img/foto-de-perfil.jpeg" alt="foto de Emanuel_Code" class="precentacion__img" />
+          <img src="img/foto-de-perfil.jpeg" alt="foto de Emanuel_Code" class="precentacion__img" />
         <div class="precentacion__descripcionCompleta">
           <h1 class="precentacion__titulo">Desarrollador Web</h1>
           <div class="precentacion__parrafo">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus mollitia ullam repudiandae, sequi
-              nisi atque cupiditate quasi, consequatur porro esse ipsa voluptates? Quos aliquam nisi officiis officia
-              maxime voluptates error.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Temporibus mollitia ullam repudiandae, sequi nisi atque
+              cupiditate quasi, consequatur porro esse ipsa voluptates? Quos
+              aliquam nisi officiis officia maxime voluptates error.
+            </p>
           </div>
         </div>
       </div>
-
     </div>
   </header>
   <main>
     <section class="proyectos">
-      <h2 class="Proyectos__titulo">Proyectos</h2>
+      <h2 class="proyectos__titulo">PROYECTOS</h2>
       <div class="proyectos__bloque">
         <div class="proyectos__cajas">1</div>
         <div class="proyectos__cajas">2</div>
@@ -49,11 +54,20 @@
       </div>
     </section>
     <section class="tecnologias">
-      <h2 class="tecnologias__titulo">Tecnologias</h2>
+      <h2 class="tecnologias__titulo">TECNOLOGIAS</h2>
       <div class="tecnologias__bloque">
-        <div class="tecnologias_cajas"><img src="img/html.png" alt="" class="tecnologias__img"></div>
-        <div class="tecnologias_cajas"><img src="img/css.png" alt="" class="tecnologias__img"></div>
-        <div class="tecnologias_cajas"><img src="img/javascript.png" alt="" class="tecnologias__img--active"></div>
+        <div class="tecnologias_cajas">
+          <img src="img/html.png" alt="" class="tecnologias__img" />
+        </div>
+        <div class="tecnologias_cajas">
+          <img src="img/css.png" alt="" class="tecnologias__img" />
+        </div>
+        <div class="tecnologias_cajas">
+          <img src="img/javascript.png" alt="" class="tecnologias__img--radio" />
+        </div>
+        <div class="tecnologias_cajas--fondo">
+          <img src="img/github.png" alt="" class="tecnologias__img--fondo" />
+        </div>
       </div>
     </section>
   </main>
@@ -63,7 +77,9 @@
         <input type="text" name="nombre" class="formulario__input" />
         <input type="email" name="correo" class="formulario__input" />
       </div>
-      <div><textarea name="texto" id="" cols="30" rows="10" class="formulario_textarea"></textarea></div>
+      <div>
+        <textarea name="texto" id="" cols="30" rows="10" class="formulario_textarea"></textarea>
+      </div>
       <input type="submit" class="formulario__submit" />
     </form>
   </footer>
