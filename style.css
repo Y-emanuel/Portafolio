@@ -17,15 +17,20 @@ li {
 }
 
 .navegador {
+  position: sticky;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 2px 15px 2px 15px;
+  top: 0;
+  z-index: 1000;
 }
 
 .nombre {
   position: relative;
-  text-shadow: #0466c8 0 0 10px;
+  text-shadow: #fff 0 0 10px,
+  #fff 0 0 20px,
+  #fff 0 0 30px;
   z-index: 20;
   padding: 10px;
 }
@@ -40,19 +45,32 @@ li {
 
 .navegador__botones {
   color: #fff;
-  border-bottom: #c77dff 2px solid;
+  border: #5a189a 2px solid;
+  padding: 10px 20px;
+  border-radius: 5px;
   transition: 1s;
 }
 
 .navegador__botones:hover {
-  border-bottom: #0466c8 2px solid;
+  background-color: #5a189a;
+  box-shadow: #c77dff 0 0 10px, 
+  #c77dff 0 0 20px,
+  #c77dff 0 0 30px;
+  text-shadow: #fff 0 0 5px,
+  #c77dff 0 0 10px,
+  #c77dff 0 0 20px;
+  /* border-bottom: #0466c8 2px solid; */
 }
 
 .precentacion {
+  position: relative;
   display: flex;
   margin-top: 100px;
   justify-content: center;
+  z-index: 1000;
 }
+
+
 
 .precentacion__bloque {
   display: flex;
@@ -167,6 +185,7 @@ li {
   border: none;
   border-bottom: #0466c8 2px solid;
   outline: none;
+  color: #fff;
 }
 
 .formulario__input:focus, .formulario_textarea:focus{
@@ -209,4 +228,9 @@ li {
   #fff 0 0 10px,
   #fff 0 0 20px
   ;
+}
+
+.formulario__input::placeholder,.formulario_textarea::placeholder{
+  color: #008cff;
+
 }
