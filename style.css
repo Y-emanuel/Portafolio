@@ -63,11 +63,9 @@ li {
 }
 
 .precentacion {
-  position: relative;
   display: flex;
   margin-top: 100px;
   justify-content: center;
-  z-index: 1000;
 }
 
 
@@ -91,9 +89,7 @@ li {
   transition: 1s;
 }
 
-.precentacion__img:hover {
-  box-shadow: #c77dff 10px 0 15px;
-}
+
 
 .precentacion__descripcionCompleta {
   display: flex;
@@ -233,4 +229,67 @@ li {
 .formulario__input::placeholder,.formulario_textarea::placeholder{
   color: #008cff;
 
+}
+
+@media (max-width:960px){
+
+  .navegador{
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .navegador__menu{
+    display: none;
+  }
+
+  .precentacion__img {
+    max-width:30vw;
+    
+    border-radius: 50%;
+  }
+  .precentacion__bloque {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .proyectos__titulo, .tecnologias__titulo{
+    font-size: 5vw;
+  }
+  .proyectos{
+    margin-top: 50px;
+  }
+
+  .tecnologias__img {
+    max-width: 12vw;
+  }
+  .tecnologias__img--radio{
+    max-width: 12vw;
+  }
+  .formulario__input{
+
+    width:30vw;
+
+  }
+  
+  
+  .formulario_textarea{
+
+    width: 63vw;
+    height: 30vh;
+
+  }
+
+  .tecnologias{
+    margin-top: 50px;
+  }
+
+}
+
+@media (max-width:620px){
+  .proyectos__cajas{
+    padding: 60px;
+  }
 }
