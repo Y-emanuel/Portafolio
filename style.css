@@ -15,12 +15,22 @@ li {
   list-style: none;
 }
 
-.navegador {
+.navegador__flex{
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: 2px 15px 2px 15px;
+  justify-content: space-between;
+  margin: 0 30rem;
 }
+
+.max-width{
+  max-width: 70rem;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 
 .nombre {
   position: relative;
@@ -33,12 +43,12 @@ li {
 .navegador__menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
 }
 
 .navegador__botones {
-  padding: 10px 30px;
+  padding: 5px 20px;
   margin-bottom: 30px;
   border: none;
   border: #495057 2px solid;
